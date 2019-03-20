@@ -69,4 +69,11 @@ describe('Campaigns', () => {
         const request = await campaign.methods.requests(0).call();
         assert.equal('buy parts',request.description);
     });
+    it('processes requests',async () => {
+        await campaign.methods.contribute().send({
+            from: accounts[0],
+            value: web3.utils.toWei('10','ether')
+        });
+        
+    });
 });
