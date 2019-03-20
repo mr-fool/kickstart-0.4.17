@@ -20,4 +20,3 @@ for (let contract in output) {
         output[contract]
     );
 }
-//http://jsonviewer.stack.hu/
