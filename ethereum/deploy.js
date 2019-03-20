@@ -21,3 +21,4 @@ const deploy = async () => {
   console.log('Contract deployed to', result.options.address);
 };
 deploy();
+//Contract deployed to 0x133092496ae191aDA0D68bf8ffa4f4FA55C053DB
