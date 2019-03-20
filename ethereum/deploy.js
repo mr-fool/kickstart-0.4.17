@@ -1,7 +1,8 @@
 const HDWalletProvider = require('truffle-hdwallet-provider');
 const Web3 = require('web3');
-const { interface, bytecode } = require('./compile');
+const compiledFactory = require('./build/CampaignFactory.json');
 require('dotenv').config() // Store environment-specific variable from '.env' to process.env
+
 const provider = new HDWalletProvider(
     process.env.MNENOMIC,
     "https://rinkeby.infura.io/v3/" + process.env.INFURA_API_KEY
@@ -13,8 +14,8 @@ const deploy = async () => {
 
   console.log('Attempting to deploy from account', accounts[0]);
 
-  const result = await new web3.eth.Contract(JSON.parse(interface))
-    .deploy({ data: bytecode })
+  const result = await new web3.eth.Contract(JSON.parse(compiledFactory.interface))
+    .deploy({ data: compiledFactory.bytecode })
     .send({ gas: '1000000', from: accounts[0] });
 
   console.log('Contract deployed to', result.options.address);
