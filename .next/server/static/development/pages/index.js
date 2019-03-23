@@ -118,7 +118,7 @@ __webpack_require__.r(__webpack_exports__);
 var _build_CampaignFactory_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./build/CampaignFactory.json */ "./ethereum/build/CampaignFactory.json", 1);
 
 
-var instance = new _web3__WEBPACK_IMPORTED_MODULE_0__["default"].eth.Contract(Json.parse(_build_CampaignFactory_json__WEBPACK_IMPORTED_MODULE_1__.interface), '0x133092496ae191aDA0D68bf8ffa4f4FA55C053DB');
+var instance = new _web3__WEBPACK_IMPORTED_MODULE_0__["default"].eth.Contract(JSON.parse(_build_CampaignFactory_json__WEBPACK_IMPORTED_MODULE_1__.interface), '0x133092496ae191aDA0D68bf8ffa4f4FA55C053DB');
 /* harmony default export */ __webpack_exports__["default"] = (instance);
 
 /***/ }),
