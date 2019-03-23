@@ -1,9 +1,9 @@
 import React, { Component} from 'react';
-import facotry from '../ethereum/factory';
+import factory from '../ethereum/factory';
 
 class CampaignIndex extends Component {
   async componentDidMount() {
-    const campaigns = await facotry.methods.getDeployedCampaigns().call();
+    const campaigns = await factory.methods.getDeployedCampaigns().call();
     console.log(campaigns);
   }
   render() {

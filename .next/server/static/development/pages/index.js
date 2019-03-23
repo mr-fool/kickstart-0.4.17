@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -135,7 +135,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var web3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! web3 */ "web3");
 /* harmony import */ var web3__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(web3__WEBPACK_IMPORTED_MODULE_0__);
 
-var web3 = new web3__WEBPACK_IMPORTED_MODULE_0___default.a(window.web3.currentProvider);
+var web3;
+
+if (typeof window !== 'undefined' && typeof window.web3 !== 'undefined') {
+  //We are in the browser and metamask is running
+  web3 = new web3__WEBPACK_IMPORTED_MODULE_0___default.a(window.web3.currentProvider);
+} else {
+  //We are on the server or the user is not running metamask
+  var provider = new web3__WEBPACK_IMPORTED_MODULE_0___default.a.providers.HttpProvider("https://rinkeby.infura.io/v3/" + process.env.INFURA_API_KEY);
+  web3 = new web3__WEBPACK_IMPORTED_MODULE_0___default.a(provider);
+}
+
 /* harmony default export */ __webpack_exports__["default"] = (web3);
 
 /***/ }),
@@ -586,7 +596,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
