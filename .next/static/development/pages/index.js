@@ -2622,7 +2622,7 @@ function fromByteArray (uint8) {
 
   var Buffer;
   try {
-    Buffer = __webpack_require__(/*! buffer */ 4).Buffer;
+    Buffer = __webpack_require__(/*! buffer */ 5).Buffer;
   } catch (e) {
   }
 
@@ -6064,7 +6064,7 @@ if (typeof self === 'object') {
 } else {
   // Node.js or Web worker with no crypto support
   try {
-    var crypto = __webpack_require__(/*! crypto */ 5);
+    var crypto = __webpack_require__(/*! crypto */ 6);
     if (typeof crypto.randomBytes !== 'function')
       throw new Error('Not supported');
 
@@ -36100,7 +36100,7 @@ util.inherits = __webpack_require__(/*! inherits */ "./node_modules/inherits/inh
 /*</replacement>*/
 
 /*<replacement>*/
-var debugUtil = __webpack_require__(/*! util */ 2);
+var debugUtil = __webpack_require__(/*! util */ 3);
 var debug = void 0;
 if (debugUtil && debugUtil.debuglog) {
   debug = debugUtil.debuglog('stream');
@@ -37989,7 +37989,7 @@ Writable.prototype._destroy = function (err, cb) {
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Buffer = __webpack_require__(/*! safe-buffer */ "./node_modules/safe-buffer/index.js").Buffer;
-var util = __webpack_require__(/*! util */ 3);
+var util = __webpack_require__(/*! util */ 4);
 
 function copyBuffer(src, target, offset) {
   src.copy(target, offset);
@@ -66812,7 +66812,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!*************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Chetzer%5CDocuments%5CGitHub%5Ckickstart-0.4.17%5Cpages%5Cindex.js ***!
   \*************************************************************************************************************************************************/
@@ -66821,17 +66821,6 @@ function (_Component) {
 
 module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Chetzer%5CDocuments%5CGitHub%5Ckickstart-0.4.17%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Chetzer%5CDocuments%5CGitHub%5Ckickstart-0.4.17%5Cpages%5Cindex.js!./");
 
-
-/***/ }),
-
-/***/ 2:
-/*!**********************!*\
-  !*** util (ignored) ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
 
 /***/ }),
 
@@ -66847,6 +66836,17 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 /***/ }),
 
 /***/ 4:
+/*!**********************!*\
+  !*** util (ignored) ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 5:
 /*!************************!*\
   !*** buffer (ignored) ***!
   \************************/
@@ -66857,7 +66857,7 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 
 /***/ }),
 
-/***/ 5:
+/***/ 6:
 /*!************************!*\
   !*** crypto (ignored) ***!
   \************************/
@@ -66879,5 +66879,5 @@ module.exports = dll_55dc4e2ecf7824085104;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]));;
+},[[2,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map
