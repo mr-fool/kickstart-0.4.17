@@ -589,13 +589,19 @@ function (_Component) {
           lineNumber: 26
         },
         __self: this
-      }), this.renderCampaigns(), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_9__["Button"], {
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h3", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }, "Open Campaigns"), this.renderCampaigns(), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_9__["Button"], {
         content: "Create Campaign",
         icon: "add",
         primary: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 29
         },
         __self: this
       }));
