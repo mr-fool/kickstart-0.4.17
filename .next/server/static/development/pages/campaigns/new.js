@@ -552,7 +552,9 @@ function (_Component) {
           lineNumber: 12
         },
         __self: this
-      }, "Minimum Contribution"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("input", {
+      }, "Minimum Contribution"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__["Input"], {
+        label: "wei",
+        labelPosition: "right",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 13
