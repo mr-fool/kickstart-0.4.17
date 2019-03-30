@@ -237,7 +237,7 @@ if (typeof window !== 'undefined' && typeof window.web3 !== 'undefined') {
   web3 = new web3__WEBPACK_IMPORTED_MODULE_0___default.a(window.web3.currentProvider);
 } else {
   //We are on the server or the user is not running metamask
-  var provider = new web3__WEBPACK_IMPORTED_MODULE_0___default.a.providers.HttpProvider("https://rinkeby.infura.io/v3/727c635298344b37961bb1755114f08b");
+  var provider = new web3__WEBPACK_IMPORTED_MODULE_0___default.a.providers.HttpProvider("https://rinkeby.infura.io/v3/ad8a4670f5284162a6369f93a3d9c314");
   web3 = new web3__WEBPACK_IMPORTED_MODULE_0___default.a(provider);
 }
 
