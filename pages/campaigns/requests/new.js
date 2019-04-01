@@ -18,6 +18,7 @@ class RequestNew extends Component {
     render() {
         return (
         <Layout>
+            <h3>Create a Request</h3>
         <Form>
             <Form.Field>
                 <label>Description</label>
