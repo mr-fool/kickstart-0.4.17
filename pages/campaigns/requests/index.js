@@ -2,11 +2,13 @@ import React, {Component} from 'react';
 import {Button} from 'semantic-ui-react';
 import {Link} from '../../../routes';
 import Layout from '../../../components/Layout';
+import Campaign from '../../../ethereum/campaign';
 
 class RequestIndex extends Component {
 
     static async gentInitialProps(props){
         const {address} = props.query;
+        const campaign = Campaign(address);
         return {address};
     }
 
